@@ -1,0 +1,188 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    font-size: 62.5%;
+    
+   
+}
+
+html {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+
+header {
+    background: rgb(49,15,84);
+    background: linear-gradient(344deg, rgb(3, 3, 20) 50%, rgb(42, 88, 109) 62%); 
+}
+
+
+section {
+    background-image: url(./assets/wine-6050189_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 6rem;
+}
+
+h2,
+form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+
+/******FORM STYLES******/
+form {
+    display: flex;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 10px;
+  
+}
+
+/*FORM LABEL*/
+.searchLabel {
+    padding-top: 40px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+/*FORM INPUT*/
+#searchInput {
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+
+}
+
+/*FORM SUBMIT BUTTON SHAKER IMAGE*/
+#image {
+    height: 90px;
+    width: 80px;
+
+}
+
+
+/*****DRINK CONTAINER STYLES******/
+.drinkContainer {
+    background-image: url(./assets/wall-2093277_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 0 auto;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px #011a29;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+.imageBox {
+    width: 35%;
+}
+
+.drinkInfoBox {
+    width: 65%;
+}
+
+.drinkImage {
+    width: 70%;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #022236;
+}
+.drinkTitle {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-style: italic;
+    
+}
+
+.ingredientsList,
+.instructions {
+    font-size: 0.9rem;
+}
+
+
+.instructions {
+    width: 70%;
+}
+
+
+
+.flexLists {
+    display: flex;
+
+}
+
+.noBullets {
+    list-style-type: none;
+    padding-left: 2px;
+}
+
+
+/*FOOTER STYLES*/
+footer {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: white;
+}
+
+.stylingDiv {
+    height: 50px;
+}

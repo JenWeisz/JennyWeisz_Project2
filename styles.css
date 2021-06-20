@@ -52,7 +52,20 @@ h1 {
     padding-bottom: 10px;
     font-family: 'Homemade Apple', cursive;
     font-size: 6rem;
+    animation: glow 1200ms infinite;
 }
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 3px #4dfafa;
+    }
+    50% {
+      text-shadow: 0 0 10px #4dfafa;
+    }
+    100% {
+      text-shadow: 0 0 3px #4dfafa;
+    }
+  }
 
 h2,
 form {
@@ -100,6 +113,54 @@ form {
 
 }
 
+#image:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(20px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-14px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(14px, 0, 0);
+    }
+  }
+
+
+/*RANDOM COCKTAIL IMAGE BUTTON*/
+#random {
+    height: 100px;
+    width: 90px;
+    margin: 0 auto;
+}
+
+#random:hover {
+    animation: rotate 3s infinite linear;
+  }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+.randomButtonDiv {
+    margin: 0 auto;
+    text-align: center;
+}
 
 /*****DRINK CONTAINER STYLES******/
 .drinkContainer {
@@ -152,11 +213,14 @@ form {
     width: 70%;
 }
 
-
-
-.flexLists {
+/*styles multiple flex divs*/
+.flexLists, 
+.flexContainer {
     display: flex;
+}
 
+.flexContainer {
+    justify-content: space-between;
 }
 
 .noBullets {

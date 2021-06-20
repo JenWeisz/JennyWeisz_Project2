@@ -23,20 +23,42 @@
             <!--WRAPPER DIV STARTS-->
              <div class="wrapper">
              
-                <h1>🍸Cocktail <br>Generator</br></h1>
+                <h1>Cocktail <br>Generator</br></h1>
 
-                <h2>Look up cocktails by ingredient below:</h2>
+                <!--DIV FLEXCONTAINER STARTS-->
+                <div class="flexContainer">
 
-                     <!--FORM WITH SEARCH-INPUT-->
+                    <div class="flexBox">
+
+                        <h2>Look up cocktails by ingredient below:</h2>
+
+                            <!--FORM WITH SEARCH-INPUT-->
+
+                            <form action="#">
+                                <label for="searchLabel" class="searchLabel">Type in ingredient:</label>
+                                <input type="text" placeholder="ingredient" id="searchInput">
+                                <input type="image" id="image" alt="submit ingredient"
+                                    src="./assets/shaker.png">
+                
+                            <!--FORM ENDS-->
+                            </form>
+
                     
-                     <form action="#">
-                        <label for="searchLabel" class="searchLabel">Type in ingredient:</label>
-                        <input type="text" placeholder="ingredient" id="searchInput">
-                        <input type="image" id="image" alt="Login"
-                            src="./assets/shaker.png">
-        
-                    <!--FORM ENDS-->
-                    </form>
+                    </div>
+
+                    <!--RANDOM BUTTON DIV-->
+                    <div class="randomButtonDiv">
+                            <h2>Click the martini to generate a random Cocktail:</h2>
+                            <input type="image" id="random" alt="submit cocktail button"
+                                    src="./assets/cocktail.png">
+                            <!-- <button id="random"></button> -->
+                    </div>
+
+                <!--DIV FLEXCONTAINER ENDS-->
+                </div>
+
+                    
+
 
              <!--WRAPPER DIV ENDS-->
             </div>
@@ -51,8 +73,12 @@
 
            
             
-                <!--EMPTY DIV RESULTS CONTAINER-->
+                <!--RESULTS CONTAINER for cocktails by ingredient-->
                 <div class= resultsContainer>
+                </div>
+
+                <!--RANDOM RESULTS CONTAINER for random cocktails-->
+                <div class= resultsRandomContainer>
                 </div>
 
                 <div class="stylingDiv">

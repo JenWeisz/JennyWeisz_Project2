@@ -49,9 +49,9 @@ section {
 h1 {
     margin: 0;
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: 'Homemade Apple', cursive;
-    font-size: 6rem;
+    font-size: 6.4rem;
     animation: glow 1200ms infinite;
 }
 
@@ -79,6 +79,21 @@ h2 {
     font-size: 1.6rem;
 }
 
+.flexBox {
+    margin-left: 30px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.flexBox, 
+.randomButtonDiv {
+    border: 15px solid rgba(9, 230, 238, 0.308);
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px #4dd8eb;
+    padding: 20px;
+}
 
 /******FORM STYLES******/
 form {
@@ -86,23 +101,16 @@ form {
     margin: 0 auto;
     font-size: 1rem;
     text-align: center;
-    width: 500px;
+    width: 300px;
     padding-bottom: 10px;
   
 }
 
-/*FORM LABEL*/
-.searchLabel {
-    padding-top: 40px;
-    margin: 0 auto;
-    font-size: 1.3rem;
-}
 
 /*FORM INPUT*/
 #searchInput {
     height: 40px;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: 40px;
 
 }
 
@@ -110,7 +118,7 @@ form {
 #image {
     height: 90px;
     width: 80px;
-
+    margin: 0 auto;
 }
 
 #image:hover {
@@ -160,6 +168,7 @@ form {
 .randomButtonDiv {
     margin: 0 auto;
     text-align: center;
+    max-width: 40%;
 }
 
 /*****DRINK CONTAINER STYLES******/
@@ -221,6 +230,7 @@ form {
 
 .flexContainer {
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .noBullets {
